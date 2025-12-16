@@ -1,0 +1,11 @@
+main {
+  flex: 1;
+  /* cresce e empurra o footer pro fim */
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #112240;
+  color: var(--branco);
+}

@@ -1,0 +1,120 @@
+.hero {
+  font-family: 'Poppins';
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    background: linear-gradient(
+        135deg,
+        var(--azul-escuro),
+        var(--azul-principal)
+    );
+    overflow: hidden;
+}
+
+/* Conteúdo */
+.hero-content {
+    max-width: 50%;
+    z-index: 2;
+    text-align: center; 
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    display: inline-block; 
+    white-space: nowrap; 
+}
+
+.hero-content p {
+    margin-top: 1rem;
+    line-height: 1.6;
+    color: var(--branco);
+}
+
+/* Digitação */
+.typing {
+    color: var(--rosa-claro);
+    white-space: nowrap;
+}
+
+/* Emoji */
+.emoji {
+    margin-left: 0.4rem;
+    display: inline-block;
+}
+
+/* Botões */
+.hero-buttons {
+    margin-top: 1.5rem;
+}
+
+.btn {
+    background: var(--azul-principal);
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--branco);
+    margin-right: 0.5rem;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--rosa-claro);
+    color: var(--azul-escuro);
+}
+
+/* Imagem */
+.hero-image {
+    z-index: 2;
+    margin-left: 3rem;
+}
+
+.hero-image img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* Canvas */
+.particles {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        min-height: 90vh; 
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        white-space: normal;
+        text-align: center;
+        display: block; 
+        justify-content: center;
+    }
+
+    .hero-image {
+        margin: 2rem 0 0;
+    }
+
+    .hero-image img {
+        width: 200px;
+    }
+}

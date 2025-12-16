@@ -1,0 +1,29 @@
+:root {
+  --azul-principal: #871eff;
+  --azul-escuro: #0A192F;
+  --rosa-claro: #ff64c4;
+  --branco: #FFFFFF;
+  --cinza: #8892B0;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  background: var(--azul-escuro);
+  color: var(--branco);
+  scroll-behavior: smooth;
+}
