@@ -6,7 +6,6 @@ import 'aos/dist/aos.css';
 
 import Navbar from '../../components/navbar/Navbar'
 import Hero from '../../components/hero/Hero'
-import Footer from '../../components/footer/Footer'
 import Skills from '../../components/skills/Skills'
 import Timeline from '../../components/timeline/Timeline'
 
@@ -25,7 +24,6 @@ function Home() {
       <Hero />
       <Timeline />
       <Skills />
-      <Footer />
     </div>
   );
 }

@@ -1,11 +1,22 @@
-main {
-  flex: 1;
-  /* cresce e empurra o footer pro fim */
+:root {
+  --branco: #FFFFFF;
+  --cinza-escuro: #112240;
 }
 
 footer {
   text-align: center;
   padding: 1.5rem;
-  background: #112240;
+  background: var(--cinza-escuro);
   color: var(--branco);
+}
+
+footer a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  opacity: 0.8;
 }

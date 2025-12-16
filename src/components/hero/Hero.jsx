@@ -7,7 +7,7 @@ const Hero = () => {
     const [typedText, setTypedText] = useState('');
     const text = 'Karen Valentim';
 
-//    EFEITO DE DIGITAÇÃO
+    //    EFEITO DE DIGITAÇÃO
     useEffect(() => {
         let index = 0;
         let intervalId;
@@ -33,7 +33,7 @@ const Hero = () => {
         };
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
-       
+
         const particles = [];
         const particleCount = 50;
         for (let i = 0; i < particleCount; i++) {
@@ -71,7 +71,7 @@ const Hero = () => {
             <div className="hero-content">
                 <h1>
                     Hello World, eu sou
-                    &nbsp; 
+                    &nbsp;
                     <span className="typing-group">
                         <span className="typing">{typedText}</span>
                         <span className="emoji">👩🏾‍💻</span>
@@ -85,25 +85,25 @@ const Hero = () => {
                     digitais.
                 </p>
 
-                <div className="hero-buttons">
-                    <a
-                        href="https://github.com/Karenvalentim2004"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn"
-                    >
-                        GitHub
+                <div className="hero-actions">
+
+                    <div className="social-icons">
+                        <a href="https://github.com/Karenvalentim2004" target="_blank" rel="noreferrer">
+                            <i className="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/karen-valentim2004" target="_blank" rel="noreferrer">
+                            <i className="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                    <a href="/Curriculo.pdf" className="btn-cv" download>
+                        Download CV
                     </a>
 
-                    <a
-                        href="https://www.linkedin.com/in/karen-valentim2004"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn"
-                    >
-                        LinkedIn
-                    </a>
+
                 </div>
+
             </div>
 
             <div className="hero-image">

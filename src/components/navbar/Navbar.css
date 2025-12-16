@@ -1,11 +1,13 @@
-:root {
-  --azul-principal: #871eff;
-  --azul-escuro: #0A192F;
-  --rosa-claro: #ff64c4;
-  --branco: #FFFFFF;
-  --cinza: #8892B0;
+:root{
+    --azul-escuro: #0A192F;
+    --azul-principal: #5409DA;
+    --azul-segundario: #4E71FF;
+    --azul-bebe: #8DD8FF;
+    --cinza: #273857;
+    --menta: #BBFBFF;
+    --branco: #FFFFFF;
+    --preto: #000000;
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -52,7 +54,7 @@
   bottom: -4px;
   width: 0;
   height: 2px;
-  background: var(--rosa-claro);
+  background: var(--menta);
   transition: 0.3s;
 }
 
@@ -63,7 +65,7 @@
 
 .nav-links button:hover,
 .nav-links button.active {
-  color: var(--rosa-claro);
+  color: var(--menta);
 }
 
 .nav-links a {
@@ -75,7 +77,7 @@
 }
 
 .nav-links a:hover {
-  color: var(--rosa-claro);
+  color: var(--menta);
 }
 
 .nav-links a::after {
@@ -85,7 +87,7 @@
   bottom: -4px;
   width: 0;
   height: 2px;
-  background: var(--rosa-claro);
+  background: var(--menta);
   transition: 0.3s;
 }
 

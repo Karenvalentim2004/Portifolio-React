@@ -1,12 +1,14 @@
 :root {
-  --azul-principal: #871eff;
   --azul-escuro: #0A192F;
-  --rosa-claro: #ff64c4;
+  --azul-principal: #5409DA;
+  --azul-segundario: #4E71FF;
+  --azul-bebe: #8DD8FF;
+  --cinza: #273857;
+  --menta: #BBFBFF;
   --branco: #FFFFFF;
-  --cinza: #8892B0;
+  --preto: #000000;
 }
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -19,11 +21,23 @@ h3 {
   font-family: 'Poppins', sans-serif;
 }
 
-body {
+html,
+body,
+#root {
   text-align: center;
+  height: 100%;
   font-family: 'Nunito', sans-serif;
-  /* font-family: 'Poppins', sans-serif; */
   background: var(--azul-escuro);
   color: var(--branco);
   scroll-behavior: smooth;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }

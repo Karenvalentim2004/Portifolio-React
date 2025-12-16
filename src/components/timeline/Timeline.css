@@ -1,14 +1,25 @@
+:root{
+    --azul-escuro: #0A192F;
+    --azul-principal: #5409DA;
+    --azul-segundario: #4E71FF;
+    --azul-bebe: #8DD8FF;
+    --cinza: #273857;
+    --menta: #BBFBFF;
+    --branco: #FFFFFF;
+    --preto: #000000;
+}
+
 .timeline {
   padding: 4rem 2rem;
   background: var(--azul-escuro);
-  color: #fff;
+  color: var(--branco);
   text-align: center;
 }
 
 .timeline h2 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
-  color: #fff;
+  color: var(--branco);
 }
 
 .timeline-container {
@@ -22,7 +33,7 @@
   content: '';
   position: absolute;
   width: 4px;
-  background: #871eff;
+  background: var(--azul-segundario);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -52,8 +63,8 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #871eff;
-  border: 3px solid #0d1b2a;
+  background: var(--azul-segundario);
+  border: 3px solid var(--azul-escuro);
   z-index: 1;
 }
 
@@ -67,7 +78,7 @@
 
 .timeline-content {
   padding: 1rem;
-  background:  #273857;
+  background:  var(--cinza);
   border-radius: 12px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
@@ -78,12 +89,12 @@
 }
 
 .timeline-content h3 {
-  color: #ff64c4;
+  color: var(--menta);
   margin-bottom: 0.5rem;
 }
 
 .timeline-content p {
-  color: #ccc;
+  color: var(--branco);
   font-size: 0.95rem;
 }
 

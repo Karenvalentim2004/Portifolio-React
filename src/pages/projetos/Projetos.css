@@ -1,11 +1,15 @@
-:root {
-    --azul-principal: #1E90FF;
+:root{
     --azul-escuro: #0A192F;
-    --azul-claro: #64FFDA;
-    --rosa-claro: #ff64c4;
+    --azul-principal: #5409DA;
+    --azul-segundario: #4E71FF;
+    --azul-bebe: #8DD8FF;
+    --cinza: #273857;
+    --cinza-escuro: #112240;
+    --menta: #BBFBFF;
     --branco: #FFFFFF;
-    --cinza: #8892B0;
+    --preto: #000000;
 }
+
 
 /* Reset */
 * {
@@ -26,23 +30,22 @@ main {
     flex: 1;
 }
 
-/* 🔥 OFFSET PARA NAVBAR FIXO */
+
 .Projetos {
-    padding-top: 90px;
-    /* altura do navbar */
+    padding-top: 90px; 
 }
 
 /* GRID DE PROJETOS */
 .projetos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(4, 1fr); 
     gap: 25px;
     padding: 20px;
 }
 
 /* CARD */
 .card {
-    background: #112240;
+    background: var(--cinza);
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
@@ -63,15 +66,15 @@ main {
 /* Nome + botões */
 .card-content {
     display: flex;
-      justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-   padding: .8rem 1rem;
+    padding: .8rem 1rem;
     text-align: left;
 }
 
 .card-buttons {
     display: flex;
-    gap: 0.200rem;
+    gap: 0.2rem;
     align-items: center;
 }
 
@@ -79,14 +82,14 @@ main {
     background: none;
     border: none;
     font-size: 1.3rem;
-    color: white;
+    color:var(--branco);
     cursor: pointer;
     transition: .3s;
 }
 
 .card-buttons .btn:hover {
     transform: scale(1.2);
-    color: #64ffda;
+    color: var(--menta);
 }
 
 .card-content h3 {
@@ -99,13 +102,12 @@ main {
 .modal {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, .7);
+    background:var(--cinza-escuro);
     display: none;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(4px);
-    z-index: 200;
-    /* acima do navbar */
+    z-index: 200; 
 }
 
 .modal.show {
@@ -113,7 +115,7 @@ main {
 }
 
 .modal-content {
-    background: #1a1f2e;
+    background: var(--azul-escuro);
     width: 80%;
     max-width: 900px;
     padding: 25px;
@@ -129,7 +131,7 @@ main {
     top: 15px;
     background: none;
     border: none;
-    color: white;
+    color:var(--branco);
     font-size: 22px;
     cursor: pointer;
 }
@@ -147,8 +149,8 @@ main {
     margin-top: 15px;
     display: inline-block;
     padding: 10px 18px;
-    background: #64ffda;
-    color: #000;
+    background: var(--menta);
+    color: var(--preto);
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
@@ -156,24 +158,34 @@ main {
 
 .modal-right {
     width: 50%;
-    color: white;
+    color: var(--branco);
 }
 
 .info-box {
     padding: 12px;
-    background: #2b3245;
+    background: var(--cinza);
     border-radius: 8px;
     margin-bottom: 15px;
 }
 
 .info-box h4 {
-    color: #ff64c4;
+    color: var(--azul-bebe);
 }
 
 /* RESPONSIVIDADE */
 
+/* Grandes telas médias */
+@media (max-width: 1200px) {
+    .projetos-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
 /* Tablets */
 @media (max-width: 900px) {
+    .projetos-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
 
     .modal-content {
         width: 90%;
@@ -188,14 +200,12 @@ main {
 
 /* Celulares */
 @media (max-width: 600px) {
-
     .Projetos {
         padding-top: 110px;
     }
 
-    /* Grid mais compacta */
     .projetos-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
         padding: 15px;
     }
 
@@ -216,24 +226,24 @@ main {
     .card-buttons .btn {
         font-size: 1.4rem;
     }
-}
 
-/* Modal */
-.modal-content {
-    padding: 15px;
-}
+    /* Modal ajustes */
+    .modal-content {
+        padding: 15px;
+    }
 
-.close {
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-}
+    .close {
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+    }
 
-.preview-btn {
-    width: 100%;
-    text-align: center;
-}
+    .preview-btn {
+        width: 100%;
+        text-align: center;
+    }
 
-.info-box {
-    margin-bottom: 10px;
+    .info-box {
+        margin-bottom: 10px;
+    }
 }

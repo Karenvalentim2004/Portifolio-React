@@ -2,13 +2,22 @@ import { useState, useEffect } from 'react';
 import './Projetos.css';
 
 import Navbar from '../../components/navbar/Navbar';
-import Footer from '../../components/footer/Footer';
+
 
 const imagens = import.meta.glob('../../assets/*.{jpg,png,webp}', {
     eager: true,
 });
 
 const projetosData = [
+    {
+        title: 'Portifolio',
+        img: imagens['../../assets/portifolio.png'].default,
+        date: 'Dezembro 2025',
+        desc: 'Portifolio Pessoal.',
+        tec: 'HTML, CSS, JS, React',
+        preview: 'https://portifolio-react-sooty-two.vercel.app/',
+        github: 'https://github.com/Karenvalentim2004/Portifolio-React',
+    },
     {
         title: 'Brigs Confeitaria',
         img: imagens['../../assets/brigs.png'].default,
@@ -23,7 +32,7 @@ const projetosData = [
         img: imagens['../../assets/hackathon.png'].default,
         date: 'Setembro 2025',
         desc: 'Plataforma para anuncios, baseado ao quadro de empreendedores que possui na unidade.',
-         tec: 'HTML, CSS, JS',
+        tec: 'HTML, CSS, JS',
         preview: 'https://hackathon-senac.vercel.app/',
         github: 'https://github.com/Karenvalentim2004/Hackathon-Senac',
     },
@@ -32,7 +41,7 @@ const projetosData = [
         img: imagens['../../assets/noite.jpg'].default,
         date: 'Fevereiro 2026',
         desc: 'Sistema completo Full Stack para organização, intuito é simular um planner de forma virtual.',
-         tec: 'HTML, CSS, JS, React, Node.JS',
+        tec: 'HTML, CSS, JS, React, Node.JS',
         preview: 'https://seu-site.com',
         github: 'https://github.com/seuRepo3',
     },
@@ -52,7 +61,6 @@ function Projetos() {
         setProjetoSelecionado(null);
     };
 
-    // AOS (opcional)
     useEffect(() => {
         if (window.AOS) {
             window.AOS.init();
@@ -144,7 +152,7 @@ function Projetos() {
                 </div>
             )}
 
-            <Footer />
+
         </div>
     );
 }
