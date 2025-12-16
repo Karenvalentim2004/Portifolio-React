@@ -36,15 +36,7 @@ const projetosData = [
         preview: 'https://hackathon-senac.vercel.app/',
         github: 'https://github.com/Karenvalentim2004/Hackathon-Senac',
     },
-    {
-        title: 'NoteFlow',
-        img: imagens['../../assets/noite.jpg'].default,
-        date: 'Fevereiro 2026',
-        desc: 'Sistema completo Full Stack para organização, intuito é simular um planner de forma virtual.',
-        tec: 'HTML, CSS, JS, React, Node.JS',
-        preview: 'https://seu-site.com',
-        github: 'https://github.com/seuRepo3',
-    },
+
 ];
 
 function Projetos() {

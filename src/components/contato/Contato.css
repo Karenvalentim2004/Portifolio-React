@@ -1,0 +1,56 @@
+:root{
+    --azul-escuro: #0A192F;
+    --azul-principal: #5409DA;
+    --azul-segundario: #4E71FF;
+    --azul-bebe: #8DD8FF;
+    --cinza: #273857;
+    --menta: #BBFBFF;
+    --branco: #FFFFFF;
+    --preto: #000000;
+}
+
+.contato {
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: var(--cinza);
+  border-radius: 12px;
+}
+
+.contato h2 {
+  margin-bottom: 1.5rem;
+}
+
+.contato  form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contato input,
+.contato textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.contato textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contato button {
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--azul-principal);
+  color:var(--branco);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contato button:hover {
+  color: var(--menta);
+}

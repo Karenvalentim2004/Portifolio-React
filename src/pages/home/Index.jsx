@@ -8,6 +8,7 @@ import Navbar from '../../components/navbar/Navbar'
 import Hero from '../../components/hero/Hero'
 import Skills from '../../components/skills/Skills'
 import Timeline from '../../components/timeline/Timeline'
+import Contato from '../../components/contato/Contato'
 
 function Home() {
 
@@ -24,6 +25,7 @@ function Home() {
       <Hero />
       <Timeline />
       <Skills />
+      <Contato />
     </div>
   );
 }
