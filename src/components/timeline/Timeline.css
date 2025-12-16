@@ -86,3 +86,65 @@
   color: #ccc;
   font-size: 0.95rem;
 }
+
+/* RESPONSIVIDADE - TIMELINE */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+  .timeline-container::after {
+    left: 30px; 
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    left: 0;
+    text-align: left;
+  }
+
+  .timeline-item::before {
+    left: 20px;
+    right: auto;
+    top: 32px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+
+  .timeline {
+    padding: 3rem 1rem;
+  }
+
+  .timeline h2 {
+    font-size: 1.5rem;
+  }
+
+  .timeline-container {
+    padding: 0;
+  }
+
+  .timeline-item {
+    padding-left: 55px;
+    padding-right: 10px;
+  }
+
+  .timeline-content {
+    padding: .9rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.9rem;
+  }
+}
