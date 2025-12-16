@@ -26,7 +26,6 @@
     overflow: hidden;
 }
 
-/* Conteúdo */
 .hero-content {
     max-width: 50%;
     z-index: 2;
@@ -99,8 +98,8 @@
 
 /* Botão Download CV */
 .btn-cv {
-    background: var(--azul-principal);
-    color: var(--branco);
+    background: var(--branco);
+    color: var(--azul-principal);
     padding: 0.7rem 1.8rem;
     border-radius: 8px;
     text-decoration: none;
@@ -109,7 +108,7 @@
 }
 
 .btn-cv:hover {
-    background: var(--menta);
+    background: var(--azul-principal);
     color: var(--preto);
 }
 
