@@ -28,10 +28,10 @@ const projetosData = [
         github: 'https://github.com/Karenvalentim2004/brigs-react',
     },
     {
-        title: 'Hackathon Senac',
+        title: 'MuralJá',
         img: imagens['../../assets/hackathon.png'].default,
         date: 'Setembro 2025',
-        desc: 'Plataforma para anuncios, baseado ao quadro de empreendedores que possui na unidade.',
+        desc: 'Hackathon da aula do Senac, sendo proposto uma plataforma para anuncios, baseado ao quadro de empreendedores que possui na unidade.',
         tec: 'HTML, CSS, JS',
         preview: 'https://hackathon-senac.vercel.app/',
         github: 'https://github.com/Karenvalentim2004/Hackathon-Senac',
